@@ -1,12 +1,10 @@
-import ReactDOM from 'react-dom'
 import React from 'react'
-import './index.css'
+import ReactDOM from 'react-dom'
 
-import First from './components/basic/First'
+import './index.css'
+import Lonely from './components/basic/Lonely'
 
 ReactDOM.render(
-    <div>
-        <First></First>
-    </div>,
+    <Lonely></Lonely>,
     document.getElementById('root')
 )
