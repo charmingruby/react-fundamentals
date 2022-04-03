@@ -11,12 +11,21 @@ import Family from './components/basic/Family'
 import FamilyMember from './components/basic/FamilyMember'
 import StudentsList from './components/repetition/StudentsList'
 import ProductsList from './components/repetition/ProductsList'
+import OddOrEven from './components/conditional/OddOrEven'
+import UserInfo from './components/conditional/UserInfo'
 
 export default () =>
     <div class="App">
         <h1>React Fundamentals</h1>
         
         <div className="Cards">
+
+            <Card title="#8 - Conditional Render" color="#FFC2B4">
+                <OddOrEven number={20}></OddOrEven>
+                <UserInfo usuario={{nome: 'Julia'}}></UserInfo>
+                <UserInfo usuario={{email: 'juju@lia.com'}}></UserInfo>
+            </Card>
+
             <Card title="#7 - Repetition Challenge" color="#F8E16C">
                 <ProductsList/>
             </Card>
