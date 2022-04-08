@@ -1,18 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import IndirectChild from './IndirectChild'
 
 export default props => {
 
-    let name = '?'
-    let age = 0
-    let nerd = false
+    const [name, setName] = useState('?')
+    const [age, setAge] = useState(0)
+    const [nerd, setNerd] = useState(false)
 
-    function getInfo(nameParam, ageParam, nerdParam) {
-        name = nameParam
-        age = ageParam
-        nerd = nerdParam
-        console.log(name, age, nerd)
-    }
+    function getInfo(name, age, nerd) {
+        setName(name)
+        setAge(age)
+        setNerd(nerd)
+    }   
     return (
         <div>
             <div>

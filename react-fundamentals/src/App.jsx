@@ -15,12 +15,25 @@ import OddOrEven from './components/conditional/OddOrEven'
 import UserInfo from './components/conditional/UserInfo'
 import DirectParent from './components/communication/DirectParent'
 import IndirectParent from './components/communication/IndirectParent'
+import Input from './components/form/Input'
+import Counter from './components/counter/Counter'
 
 export default () =>
     <div className="App">
         <h1>React Fundamentals</h1>
 
         <div className="Cards">
+
+            <Card title="#12 - Counter" color="#FFC2B4">
+                <Counter
+                    initialNumber={10}
+                    steps={5}>
+                </Counter>
+            </Card>
+
+            <Card title="#11 - Input" color="#F8E16C">
+                <Input></Input>
+            </Card>
 
             <Card title="#10 - Indirect Communication" color="#FB8F67">
                 <IndirectParent></IndirectParent>
